@@ -86,7 +86,7 @@ sample markup
                             </div>
                         </div>
                     </div>
-                    <div class="col g3-1of2 g4-1of2">
+                    <div class="col g3-1of1 g4-1of2">
                         <div class="in">
                             <div class="module">
                                 <h1 class="h3">Column</h1>
@@ -94,7 +94,8 @@ sample markup
                             </div>
                         </div>
                     </div>
-                    <div class="col g3-1of2 g4-1of2">
+
+                    <div class="col g3-1of1 g4-1of2">
                         <div class="in">
                             <div class="module">
                                 <h1 class="h3">Column</h1>
@@ -119,6 +120,7 @@ sample markup
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 ```
