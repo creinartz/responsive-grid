@@ -67,3 +67,58 @@ $screen-large:  43.5em !default;
 $screen-xlarge: 52.5em !default;
 $screen-xxlarge: 60em !default;
 ```
+
+columns can be nested
+
+sample markup
+
+```html
+<div class="grid-wrap">
+    <div class="row">
+        <div class="col g-1of1 g3-2of3 g4-1of2">
+            <div class="in">
+                <div class="row is-nested">
+                    <div class="col g4-1of1">
+                        <div class="in">
+                            <div class="module">
+                                <h1 class="h3">Column</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col g3-1of2 g4-1of2">
+                        <div class="in">
+                            <div class="module">
+                                <h1 class="h3">Column</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col g3-1of2 g4-1of2">
+                        <div class="in">
+                            <div class="module">
+                                <h1 class="h3">Column</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col g-1of1 g3-1of3 g4-1of2">
+            <div class="in">
+                <div class="row is-nested">
+                    <div class="col g4-1of1">
+                        <div class="in">
+                            <div class="module">
+                                <h1 class="h3">Column</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
