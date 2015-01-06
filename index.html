@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>trv cake pan</title>
+    <title>simple responsive grid</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,58 +21,237 @@
 <![endif]-->
 
 <div class="wrapper">
+<!-- Add your site or application content here -->
 
-<h2>Responsive Grid System inspired by OOCSS Grid</h2>
+<div class="row main-row">
+
+<div class="col g-1of1">
+<div class="in">
+<div class="hero first">
+    <h1>Hello world! This is responsive-grid.</h1>
+
+    <span>Use it to rule the world!</span>
+</div>
+
+<h2>Base Grid Classes - responsive</h2>
 
 <div class="grid-wrap">
-    <div class="row">
-        <div class="col g-1of1 g3-2of3 g4-1of2">
-            <div class="in">
-                <div class="row is-nested">
-                    <div class="col g4-1of1">
-                        <div class="in">
-                            <div class="module">
-                                <h1 class="h3">Column</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col g3-1of1 g4-1of2">
-                        <div class="in">
-                            <div class="module">
-                                <h1 class="h3">Column</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
-                            </div>
-                        </div>
-                    </div>
+    <h4>simple grid construct</h4>
 
-                    <div class="col g3-1of1 g4-1of2">
-                        <div class="in">
-                            <div class="module">
-                                <h1 class="h3">Column</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col g-1of1 g3-1of3 g4-1of2">
+    <div class="row is-nested">
+
+        <div class="col g-1of1 g1-1of1 g3-1of3">
             <div class="in">
-                <div class="row is-nested">
-                    <div class="col g4-1of1">
-                        <div class="in">
-                            <div class="module">
-                                <h1 class="h3">Column</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae asperiores illo ipsam ea pariatur dicta quia animi repellat quis atque rerum distinctio officia eos vitae cupiditate.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="module">
+                    <h1 class="h4">Column</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae
+                        asperiores illo ipsam.</p>
                 </div>
             </div>
         </div>
+        <div class="col g-1of1 g1-1of1 g3-1of3">
+            <div class="in">
+                <div class="module">
+                    <h1 class="h4">Column</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae
+                        asperiores illo ipsam.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col g-1of1 g1-1of1 g3-1of3">
+            <div class="in">
+                <div class="module">
+                    <h1 class="h4">Column</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae
+                        asperiores illo ipsam.</p>
+                </div>
+            </div>
+        </div>
+
 
     </div>
+
+
+    <div class="row is-nested">
+
+        <div class="col g-1of1 g1-1of2">
+            <div class="in">
+                <div class="module">
+                    <h1 class="h4">Column</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae
+                        asperiores illo ipsam ea pariatur dicta .</p>
+                </div>
+            </div>
+        </div>
+        <div class="col g-1of1 g1-1of2">
+            <div class="in">
+                <div class="module">
+                    <h1 class="h4">Column</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae
+                        asperiores illo ipsam ea pariatur dicta.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="grid-wrap">
+    <h4>multiple nested grids</h4>
+
+    <div class="row">
+        <div class="col g-1of1 g4-1of5">
+            <div class="in">
+
+                <div class="row is-nested">
+                    <div class="col g2-1of1 g3-1of3 g4-1of1">
+                        <div class="in">
+                            <div class="module">
+                                <h4>Column</h4>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet
+                                    repudiandae asperiores illo ipsam ea pariatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col g2-1of1 g3-1of3 g4-1of1">
+                        <div class="in">
+                            <div class="module">
+                                <h4>Column</h4>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet
+                                    repudiandae asperiores illo ipsam ea pariatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col g2-1of1 g3-1of3 g4-1of1">
+                        <div class="in">
+                            <div class="module">
+                                <h4>Column</h4>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet
+                                    repudiandae asperiores illo ipsam ea pariatur dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col g-1of1 g4-3of5">
+            <div class="in">
+
+                <div class="row is-nested">
+                    <div class="col g-1of1 g1-1of2">
+                        <div class="in">
+                            <div class="module">
+                                <h4>Column</h4>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet
+                                    repudiandae asperiores illo ipsam ea pariatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col g-1of1 g1-1of2">
+                        <div class="in">
+                            <div class="module">
+                                <h4>Column</h4>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet
+                                    repudiandae asperiores illo ipsam ea pariatur dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row is-nested">
+                    <div class="col g-1of1 g3-1of3">
+                        <div class="in">
+                            <div class="module">
+                                <h4>Column</h4>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet
+                                    repudiandae asperiores illo ipsam ea pariatur dicta.</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet
+                                    repudiandae asperiores illo ipsam ea pariatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col g-1of1 g3-2of3">
+                        <div class="in">
+
+                            <div class="row is-nested">
+                                <div class="col g-1of1 g5-1of2">
+                                    <div class="in">
+                                        <div class="module">
+                                            <h4>Column</h4>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita
+                                                cumque eveniet repudiandae asperiores.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col g-1of1 g5-1of2">
+                                    <div class="in">
+                                        <div class="module">
+                                            <h4>Column</h4>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita
+                                                cumque eveniet repudiandae asperiores.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row is-nested">
+                                <div class="col g-1of1">
+                                    <div class="in">
+                                        <div class="module">
+                                            <h4>Column</h4>
+
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita
+                                                cumque eveniet repudiandae.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col g-1of1 g4-1of5">
+            <div class="in">
+                <div class="module">
+                    <h4>Column</h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae
+                        asperiores illo ipsam ea pariatur dicta.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae
+                        asperiores illo ipsam ea pariatur dictae.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita cumque eveniet repudiandae
+                        asperiores illo ipsam ea pariatur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+</div>
+
 </div>
 
 
