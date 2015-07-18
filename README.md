@@ -6,11 +6,11 @@ Simple Responsive Grid is a responsive, mobile first fluid grid system that scal
 
 Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the simple responsive grid system works:
 
+* Rows must be placed within a `.grid-wrap` -class for proper alignment and padding.
 * Use the `.row` -class to create horizontal groups of columns
 * Content should be placed within columns (`.col`), and only columns should be immediate children of rows
 * Predefined grid classes like `.row` and e.g. `.g1-1of2` are available for quickly making grid layouts
-* Columns create gutters if additonal markup `<div class="col-inner"></div>` (gaps between column content) is added via margin.
-* To reset the margin on rows if used the in -classes (having no margin on last and first column) use the `.is-nested` class on rows to reset gutter via negative margin.
+* Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on `.row`.
 * Grid columns are specified by specifying the number columns, e.g. .size `.g-3of4` creates a column of that uses 75%. 
 * if the space of column exceeds in total 100%, each group will wrap into a new line. (helper classes for clearfixing might be needed)
 * Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any `.g1-* class` to an element will not only affect its styling on medium devices but also on larger devices if a `.g2-* class` class is not present.
@@ -20,14 +20,10 @@ Grid systems are used for creating page layouts through a series of rows and col
 ```
 <div class="row">
 	<div class="col g-1of1 g1-1of2">
-   		<div class="col-inner">
-   			<!-- -->
-   		</div>
+		<!-- -->
 	</div>
 	<div class="col g-1of1 g1-1of2">
-   		<div class="col-inner">
-   			<!-- -->
-   		</div>
+   		<!-- -->
 	</div>
 </div>	   		     	
 ```
@@ -39,22 +35,18 @@ Grids can be nested. In this example on the nested row margin gutters are remove
 ```
 <div class="row">
 	<div class="col g-1of1 g1-1of2">
-   		<div class="col-inner">
-   		   <!-- nested grid -->
-   			<div class="row is-nested">
-   				<div class="col g-1of1 g1-1of2">
-   					<div class="col-inner">
-   				</div>	
-   				<div class="col g-1of1 g1-1of2">
-   					<div class="col-inner">
-   				</div>	
-   			</div>
+		<!-- nested grid -->
+   		<div class="row">
+   			<div class="col g-1of1 g1-1of2">
+   				<!-- -->
+   			</div>	
+   			<div class="col g-1of1 g1-1of2">
+   				<!-- -->
+   			</div>	
    		</div>
 	</div>
 	<div class="col g-1of1 g1-1of2">
-   		<div class="col-inner">
-   			<!-- -->
-   		</div>
+   		<!-- -->
 	</div>
 </div>	   		     	
 ```
@@ -66,15 +58,11 @@ With the of grids available you're bound to run into issues where, at certain br
 ```
 <div class="row">
 	<div class="col g-1of1 g1-1of2">
-   		<div class="col-inner">
-   			<!-- -->
-   		</div>
+   		<!-- -->
 	</div>
 	<div class="g-block clearfix"></div>
 	<div class="col g-1of1 g1-1of2">
-   		<div class="col-inner">
-   			<!-- -->
-   		</div>
+   		<!-- -->
 	</div>
 </div>	   		     	
 ```
@@ -88,9 +76,7 @@ Columns can be offsetted. These classes increase the left margin of a column by 
 ```
 <div class="row">
 	<div class="col g-1of1 g1-1of2 g-offset-1of2">
-   		<div class="col-inner">
-   			<!-- -->
-   		</div>
+   		<!-- -->
 	</div>
 </div>	   		     	
 ```

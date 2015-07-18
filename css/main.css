@@ -462,10 +462,6 @@ table {
   max-width: 1200px;
   margin: 0 auto; }
 
-.module {
-  background-color: #eee;
-  padding: 8px; }
-
 /*
  * Clearfix: contain floats
  *
@@ -514,7 +510,8 @@ table {
 .col {
   float: left;
   padding-left: 8px;
-  padding-right: 8px; }
+  padding-right: 8px;
+  background-color: #ccc; }
 
 /*
 .col-inner {
