@@ -1,11 +1,15 @@
 /* # Grid Styles */
 
 .grid-wrap {
-    margin: $gutter-half;
+    padding-left: $gutter-half;
+    padding-right: $gutter-half;
 }
 
 /* ## Clearfix Rows */
-
+.row {
+    margin-left: -$gutter-half;
+    margin-right: -$gutter-half;
+}
 .row:before,
 .row:after {
     content: " ";
@@ -26,12 +30,16 @@
 /* ## Columns and Gutters */
 .col {
     float: left;
+    padding-left: $gutter-half;
+    padding-right: $gutter-half;
 }
 
+/*
 .col-inner {
     margin-left: $gutter-half;
     margin-right: $gutter-half;
 }
+*/
 
 .last-col {
     float: none;
