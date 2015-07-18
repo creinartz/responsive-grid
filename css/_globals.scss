@@ -1,8 +1,13 @@
 /*
 ### Media Query Ranges
 */
-$screen-small: 25.5em !default;
-$screen-medium: 32em !default;
-$screen-large:  43.5em !default;
-$screen-xlarge: 52.5em !default;
-$screen-xxlarge: 60em !default;
+$screen-small: 664px !default;
+$screen-medium: 940px !default;
+$screen-large: 1280px !default;
+$screen-extralarge:  1312px !default;
+
+/*
+### basic spacing
+*/
+$gutter: 16px !default;
+$gutter-half: ($gutter / 2) !default; // 8px

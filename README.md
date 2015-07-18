@@ -2,6 +2,8 @@
 
 inspired by OOCSS, see https://github.com/stubbornella/oocss/wiki/Grids
 
+DEMO see http://creinartz.github.io/responsive-grid
+
 ```css
 .g-1of1 { width: 100%; }
 .g-1of2 { width: 50%; }
