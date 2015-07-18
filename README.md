@@ -96,3 +96,7 @@ Columns can be offsetted. These classes increase the left margin of a column by 
 ```
 
 In this example on the smallest viewport the column will show with 100% width and with the next breakpoint it will be shown with 50% and offsetted with 50%.
+
+## DEMO
+
+see it in [action](http://creinartz.github.io/responsive-grid)
